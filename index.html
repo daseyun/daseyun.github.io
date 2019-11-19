@@ -2,43 +2,112 @@
 <html>
   <head>
     <title>Seokju Yun</title>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css" />
   </head>
-  <body>
-    <h1>Seokju Yun</h1>
-    <p>Personal website for documenting my (cs) life!</p>
-    <hr />
-    <h3>About</h3>
-    <ul>
-      <li><a href="github.com/daseyun">Github</a></li>
-      <li>
-        <a href="https://www.linkedin.com/in/seokjudanielyun/">LinkedIn</a>
-      </li>
-      <li><strike>Resume</strike></li>
-    </ul>
-    <hr />
-    <h2>Projects</h2>
 
-    <h3>alift</h3>
-    <p>[WIP]</p>
-    <p>
-      A lightweight fitness tracker. <br />Create workout routines, log exercise
-      results, and visualize data. <br />Responsive web-app built in Django and
-      React. <br />Planning on creating mobile application with the same Django
-      rest api.
-    </p>
-    <a href="https://github.com/daseyun/aliftAPI">Github: aliftAPI</a>
-    <hr />
-    <h3>N Puzzle Solver</h3>
-    <p>
-      Solves number puzzle game (also known as
-      <a href="https://www.archimedes-lab.org/game_slide15/slide15_puzzle.html"
-        >15 puzzle game</a
-      >) using A* algorithm implementation. <br />Manhattan distance heuristic
-      is used.
+  <body>
+    <div class="container">
       <br />
-      Note: Increase the memory for the program for faster performance.
-    </p>
-    <a href="https://github.com/daseyun/puzzleSolver">Github: puzzleSolver</a>
-    <hr />
+
+      <h1 class="">Seokju Yun</h1>
+      <p>
+        Personal website for documenting my (cs) life!<br />
+        Currently a 4th year student at Northeastern University.
+      </p>
+      <br />
+      <span
+        ><a
+          href="https://www.github.com/daseyun"
+          class="btn btn-outline-success"
+          >Github</a
+        ></span
+      >
+
+      <span
+        ><a
+          href="https://www.linkedin.com/in/seokjudanielyun/"
+          class="btn btn-outline-info"
+          >LinkedIn</a
+        ></span
+      >
+
+      <span
+        ><a
+          href="#"
+          class="btn btn-outline-warning"
+          id="email"
+          value="daseyun@gmail.com"
+          onclick="copyEmail();"
+          >daseyun@gmail.com</a
+        ></span
+      >
+      <span class="text-success" id="emailCopied" style="display:none">
+        Email copied to clipboard!
+      </span>
+      <br />
+      <br />
+
+      <h2>Projects</h2>
+      <br />
+
+      <h3>alift</h3>
+      <span class="badge badge-warning">[WIP]</span>
+      <br />
+
+      <p>
+        A lightweight fitness tracker. <br />Create workout routines, log
+        exercise results, and visualize data. <br />Responsive web-app built in
+        Django and React. <br />Planning on creating mobile application with the
+        same Django rest api.
+      </p>
+      <a href="https://github.com/daseyun/aliftAPI">Github: aliftAPI</a>
+      <br />
+      <br />
+      <br />
+
+      <h3>N Puzzle Solver</h3>
+      <p>
+        Number puzzle (<a
+          href="https://www.archimedes-lab.org/game_slide15/slide15_puzzle.html"
+          >15 puzzle</a
+        >) game solver using A* algorithm implementation. <br />Manhattan
+        distance heuristic is used.
+        <br />
+        Built in Java.
+        <br />
+        Note: Increase the memory for the program for faster performance.
+      </p>
+      <a href="https://github.com/daseyun/puzzleSolver">Github: puzzleSolver</a>
+
+      <br />
+      <br />
+      <br />
+      <h3>cook_me</h3>
+      <p>
+        CLI recipe database for finding recipes. <br />
+        Search recipes by its name or ingredients of the recipe. <br />
+        Sort recipes by various elements: total estimated cost, number of
+        ingredients required, <br />cook time, and more. <br />
+        Built with Java, JDBC and MySQL.
+      </p>
+      <a href="https://github.com/daseyun/cook_me">Github: cook_me</a>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
