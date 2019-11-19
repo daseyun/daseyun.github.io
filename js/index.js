@@ -1,3 +1,17 @@
+$(function() {
+  $("#name-title").hover(
+    function() {
+      $("#name-title").html(
+        '(Da<span class="text-secondary">niel</span>) \
+          Se<span class="text-secondary">okju</span> Yun'
+      );
+    },
+    function() {
+      $("#name-title").html("(Daniel) Seokju Yun");
+    }
+  );
+});
+
 function copyEmail() {
   var copyText = document.getElementById("email");
   var textArea = document.createElement("textarea");
