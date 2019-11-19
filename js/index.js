@@ -1,18 +1,3 @@
-// function copyEmail() {
-//   /* Get the text field */
-//   var copyText = document.getElementById("email");
-//   console.log(copyText.value);
-//   /* Select the text field */
-//   //   copyText.select();
-//   //   copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-//   /* Copy the text inside the text field */
-//   document.execCommand("copy");
-
-//   /* Alert the copied text */
-//   alert("Copied the text: " + copyText.value);
-// }
-
 function copyEmail() {
   var copyText = document.getElementById("email");
   var textArea = document.createElement("textarea");
@@ -22,13 +7,51 @@ function copyEmail() {
   document.execCommand("Copy");
   textArea.remove();
 
-  //   var $emailCopied = $("#emailCopied");
-  //   console.log($emailCopied);
-  //   //   if ($emailCopied.is(":visible")) {
-  //   //     return;
-  //   //   }
   $("#emailCopied").show();
   setTimeout(function() {
     $("#emailCopied").hide();
   }, 10000);
+}
+
+function processForm(e) {
+  if (e.preventDefault) e.preventDefault();
+  $("#magic8ballAnswer").hide();
+  $("#magic8ballAnswer").removeClass("text-warning text-success text-danger");
+  /* do what you want with the form */
+  var question = document.getElementById("magic8ballQuestion").value;
+  var answer = "";
+  var color = "";
+
+  if (question.includes("hire") || question.includes("interview")) {
+    answer = "Yes";
+    color = "success";
+  } else {
+    var random = Math.random();
+    if (random < 0.333) {
+      color = "success";
+      answer = "Yes";
+    } else if (random < 0.666) {
+      color = "danger";
+      answer = "No";
+    } else {
+      color = "warning";
+      answer = "Maybe";
+    }
+  }
+
+  $("#magic8ballAnswer").addClass("text-" + color);
+  $("#magic8ballAnswer").text(answer);
+  setTimeout(function() {
+    $("#magic8ballAnswer").show();
+  }, 500);
+
+  // You must return false to prevent the default form behavior
+  return false;
+}
+
+var form = document.getElementById("magic8ball");
+if (form.attachEvent) {
+  form.attachEvent("submit", processForm);
+} else {
+  form.addEventListener("submit", processForm);
 }

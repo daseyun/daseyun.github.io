@@ -50,47 +50,80 @@
       <h2>Projects</h2>
       <br />
 
-      <h3>alift</h3>
-      <span class="badge badge-warning">[WIP]</span>
-      <br />
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>alift</h3>
+          <span class="badge badge-warning">[WIP]</span>
+          <br />
 
-      <p>
-        A lightweight fitness tracker. <br />Create workout routines, log
-        exercise results, and visualize data. <br />Responsive web-app built in
-        Django and React. <br />Planning on creating mobile application with the
-        same Django rest api.
-      </p>
-      <a href="https://github.com/daseyun/aliftAPI">Github: aliftAPI</a>
-      <br />
-      <br />
-      <br />
+          <p>
+            A lightweight fitness tracker. <br />Create workout routines, log
+            exercise results, and visualize data. <br />Responsive web-app built
+            in Django and React. <br />Planning on creating mobile application
+            with the same Django rest api.
+          </p>
+          <a href="https://github.com/daseyun/aliftAPI">Github: aliftAPI</a>
+          <br />
+          <br />
+          <br />
+        </div>
+        <div class="col-lg-6">
+          <h3>N Puzzle Solver</h3>
+          <p>
+            Number puzzle (<a
+              href="https://www.archimedes-lab.org/game_slide15/slide15_puzzle.html"
+              >15 puzzle</a
+            >) game solver using A* algorithm implementation. <br />Manhattan
+            distance heuristic is used.
+            <br />
+            Built in Java.
+            <br />
+            Note: Increase the memory for the program for faster performance.
+          </p>
+          <a href="https://github.com/daseyun/puzzleSolver"
+            >Github: puzzleSolver</a
+          >
 
-      <h3>N Puzzle Solver</h3>
-      <p>
-        Number puzzle (<a
-          href="https://www.archimedes-lab.org/game_slide15/slide15_puzzle.html"
-          >15 puzzle</a
-        >) game solver using A* algorithm implementation. <br />Manhattan
-        distance heuristic is used.
-        <br />
-        Built in Java.
-        <br />
-        Note: Increase the memory for the program for faster performance.
-      </p>
-      <a href="https://github.com/daseyun/puzzleSolver">Github: puzzleSolver</a>
-
-      <br />
-      <br />
-      <br />
-      <h3>cook_me</h3>
-      <p>
-        CLI recipe database for finding recipes. <br />
-        Search recipes by its name or ingredients of the recipe. <br />
-        Sort recipes by various elements: total estimated cost, number of
-        ingredients required, <br />cook time, and more. <br />
-        Built with Java, JDBC and MySQL.
-      </p>
-      <a href="https://github.com/daseyun/cook_me">Github: cook_me</a>
+          <br />
+          <br />
+          <br />
+        </div>
+        <div class="col-lg-6">
+          <h3>cook_me</h3>
+          <p>
+            CLI recipe database for finding recipes. <br />
+            Search recipes by its name or ingredients of the recipe. <br />
+            Sort recipes by various elements: total estimated cost, number of
+            ingredients required, <br />cook time, and more. <br />
+            Built with Java, JDBC and MySQL.
+          </p>
+          <a href="https://github.com/daseyun/cook_me">Github: cook_me</a>
+        </div>
+        <div class="col-lg-6">
+          <h3>Ask a question!</h3>
+          <form id="magic8ball">
+            <div class="form-group">
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control"
+                  id="magic8ballQuestion"
+                  placeholder="Hire him?"
+                />
+              </div>
+              <small id="emailHelp" class="form-text text-muted"
+                >Not responsible for potential financial ruin.</small
+              >
+            </div>
+            <h3 id="magic8ballAnswer" class="text-center" style="display:none">
+              N/A
+            </h3>
+          </form>
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
     </div>
 
     <script src="js/index.js"></script>
