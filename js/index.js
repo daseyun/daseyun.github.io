@@ -2,8 +2,8 @@ $(function() {
   $("#name-title").hover(
     function() {
       $("#name-title").html(
-        '(Da<span class="text-secondary">niel</span>) \
-          Se<span class="text-secondary">okju</span> Yun'
+        '(Da<span class="text-white">niel</span>) \
+          Se<span class="text-white">okju</span> Yun'
       );
     },
     function() {
