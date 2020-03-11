@@ -39,6 +39,7 @@ function processForm(e) {
   if (question.includes("hire") || question.includes("interview")) {
     answer = "Yes";
     color = "success";
+    copyEmail();
   } else {
     var random = Math.random();
     if (random < 0.333) {
