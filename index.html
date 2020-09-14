@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-178000151-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-178000151-1");
+    </script>
+
     <title>Seokju Yun</title>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css" />
   </head>
@@ -13,19 +28,18 @@
       <br />
       <br />
       <br />
-      <h1 class="display-4" id="name-title">
-        (Daniel) Seokju Yun
-      </h1>
+      <h1 class="display-4" id="name-title">(Daniel) Seokju Yun</h1>
       <!-- <h1 id="name-title">Seokju (Daniel) Yun</h1> -->
       <p>
         Personal website for documenting my (cs) life!<br />
-        Currently a 4th year student at Northeastern University.<br />
+        Currently a 5th year student at Northeastern University.<br />
       </p>
       <br />
       <span
         ><a
           href="https://www.github.com/daseyun"
           class="btn btn-outline-success"
+          target="_blank"
           >Github</a
         ></span
       >
@@ -34,6 +48,7 @@
         ><a
           href="https://www.linkedin.com/in/seokjudanielyun/"
           class="btn btn-outline-info"
+          target="_blank"
           >LinkedIn</a
         ></span
       >
@@ -41,6 +56,7 @@
         ><a
           href="assets/SeokjuDanielYunResume.pdf"
           class="btn btn-outline-danger"
+          target="_blank"
           >Resume</a
         ></span
       >
@@ -55,7 +71,7 @@
           >daseyun@gmail.com</a
         ></span
       >
-      <span class="text-success" id="emailCopied" style="display:none">
+      <span class="text-success" id="emailCopied" style="display: none">
         Email copied to clipboard!
       </span>
       <br />
@@ -68,6 +84,19 @@
 
       <div class="row">
         <div class="col-lg-6">
+          <h3>Fridgloo</h3>
+          <p>
+            Track your fridge to reduce unnecessary purchases, <br />keep tabs
+            on expiring items, and discover new recipes! <br />React Native App.
+          </p>
+          <a href="https://github.com/fridgloo/Fridgify" target="_blank"
+            >Github: Frigloo</a
+          >
+          <br />
+          <br />
+          <br />
+        </div>
+        <div class="col-lg-6">
           <h3>alift</h3>
           <span class="badge badge-warning">[WIP]</span>
           <br />
@@ -77,7 +106,9 @@
             exercise results, and visualize data. <br />Responsive web-app built
             in Django/React/PostgreSQL. <br />
           </p>
-          <a href="https://github.com/daseyun/aliftAPI">Github: aliftAPI</a>
+          <a href="https://github.com/daseyun/aliftAPI" target="_blank"
+            >Github: aliftAPI</a
+          >
           <br />
           <br />
           <br />
@@ -87,6 +118,7 @@
           <p>
             Number puzzle (<a
               href="https://www.archimedes-lab.org/game_slide15/slide15_puzzle.html"
+              target="_blank"
               >15 puzzle</a
             >) game solver using A* algorithm implementation. <br />Manhattan
             distance heuristic is used.
@@ -95,7 +127,7 @@
             <br />
             Note: Increase the memory for the program for faster performance.
           </p>
-          <a href="https://github.com/daseyun/puzzleSolver"
+          <a href="https://github.com/daseyun/puzzleSolver" target="_blank"
             >Github: puzzleSolver</a
           >
 
@@ -112,7 +144,9 @@
             ingredients required, <br />cook time, and more. <br />
             Built with Java, JDBC and MySQL.
           </p>
-          <a href="https://github.com/daseyun/cook_me">Github: cook_me</a>
+          <a href="https://github.com/daseyun/cook_me" target="_blank"
+            >Github: cook_me</a
+          >
           <br />
           <br />
         </div>
@@ -125,7 +159,9 @@
             reference by generated uid.<br />
             Built with Express/Node.js. Tested using Mocha/Chai <br />
           </p>
-          <a href="https://github.com/daseyun/reddit-feed-retriever-api"
+          <a
+            href="https://github.com/daseyun/reddit-feed-retriever-api"
+            target="_blank"
             >Github: reddit-feed-retriever-api</a
           >
 
@@ -151,7 +187,7 @@
                 >Not responsible for potential financial ruin.</small
               > -->
             </div>
-            <h3 id="magic8ballAnswer" class="text-center" style="display:none">
+            <h3 id="magic8ballAnswer" class="text-center" style="display: none">
               N/A
             </h3>
           </form>
